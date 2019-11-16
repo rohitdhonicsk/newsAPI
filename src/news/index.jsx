@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './card'
+import './style.css'
 class News extends Component {
 
   state = {
@@ -8,7 +9,7 @@ class News extends Component {
 
 
   componentDidMount() {
-    const url = "https://newsapi.org/v2/everything?q=bitcoin&from=2019-08-28&sortBy=publishedAt&apiKey=b2c04a557c9a440b9c08d7682cba9d9c"
+    const url = "https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=b2c04a557c9a440b9c08d7682cba9d9c"
     const config = {
       header: { accept: "application/json" },
       method: 'GET'
@@ -34,7 +35,7 @@ class News extends Component {
   render() {
 
     return (
-      <div>
+      <div className="biggest-container">
         {
           this.state.news.map((item) => {
             return <Card img={item.urlToImage} title={item.title} description={item.description} />
