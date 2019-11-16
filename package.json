@@ -2,7 +2,7 @@
   "name": "news_api",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://rohitdhonicsk.github.io/newsAPI/",
+  "homepage": "https://rohitdhonicsk.github.io/newsAPI/",
 
   "dependencies": {
     "react": "^16.10.0",
